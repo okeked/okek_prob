@@ -39,7 +39,6 @@ FLAGS, FLAGS_DEF = define_flags_with_default(
     mesh_dim='1,-1,1,1',
     dtype='fp32',
     load_llama_config='',
-    update_llama_config='',
     load_checkpoint='',
     tokenizer=LLaMAConfig.get_tokenizer_config(),
     checkpointer=StreamingCheckpointer.get_default_config(),
