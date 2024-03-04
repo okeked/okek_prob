@@ -11,6 +11,11 @@ from functools import cached_property
 import numpy as np
 import jax
 from jax.experimental.pjit import pjit
+import random
+from functools import cached_property
+import numpy as np
+import jax
+from jax.experimental.p
 from jax.sharding import PartitionSpec as PS
 import gcsfs
 import tiktoken
@@ -36,7 +41,11 @@ FLAGS, FLAGS_DEF = define_flags_with_default(
     n_needles_total=4,
     n_needles_retrieve=4,
     seed=1234,
-    mesh_dim='1,-1,1,1',
+    mesh_dim='1,-1,1,
+     n_rounds=2,
+    n_needles_total=4,
+    n_needles_retrieve=4,
+    seed=1234,1',
     dtype='fp32',
     load_llama_config='',
     load_checkpoint='',
