@@ -1,4 +1,4 @@
-#requiriments install
+#requiriments install pip 
 from absl.app import run
 import glob
 import time
@@ -49,6 +49,11 @@ FLAGS, FLAGS_DEF = define_flags_with_default(
     n_needles_total=4,
     n_needles_retrieve=4,
     seed=1234,1',
+seed=1234,
+    mesh_dim='1,-1,1,
+     n_rounds=2,
+    n_needles_total=4,
+    n_needles_retrieve=4,
     dtype='fp32',
     load_llama_config='',
     load_checkpoint='',
